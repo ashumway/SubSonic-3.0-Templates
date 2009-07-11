@@ -257,12 +257,14 @@ string GetSysType(string sqlType){
 		case "money":
 			sysType=  "decimal";
 			 break;
+		case "tinyint":
+			sysType=  "byte";
+			   break;
 		case "bit":
 			sysType=  "bool";
 			   break;
 		case "image":
 		case "binary":
-		case "tinyint":
 		case "varbinary":
 			sysType=  "byte[]";
 			 break;
